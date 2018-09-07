@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */ 
+/* ----Algemeine Einstellungen----*/
+body			{scrollbar-base-color:inherit;background-attachment: fixed;background-color: #000;color: #FFFFFF;cursor:url(../img/cursor.png), move;
+			font: 10pt lucida grande;}
+.form			{color:#fff; padding:20px;border:0px solid #000;}
+.button 		{color:#00BFFF;width:80px;border:0px solid #000;margin-top:0px; margin-left:-90px;background-color: #ffffff;}
+input, select, option	{cursor:url(../img/cursor1.png), move;}
+td			{vertical-align:middle;}
+th			{vertical-align:middle;}
+
+/* Icon Einstellungen*/
+
+img			{vertical-align:middle;padding: 0px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.icon			{width:35px;height:35px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+			filter:alpha(opacity=60); /* IE */opacity:0.6; /* allgemein */-moz-opacity:0.6; /* Mozilla */-khtml-opacity:0.6; /* KTHML */-opera-opacity:0.6;
+			/* Opera */background-image: url(../img/overlay.png);-moz-transition:  opacity .3s linear;-webkit-transition:  opacity .3s linear;
+			transition:  opacity .3s linear;}
+.icon:hover		{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;filter:alpha(opacity=100); /* IE */opacity:1; /* allgemein */-moz-opacity:1;
+			/* Mozilla */-khtml-opacity:1; /* KTHML */-opera-opacity:1; /* Opera */}
+
+/*----Tooltip Einstellungen----*/
+
+a:link, a:visited	{color:inherit;text-decoration: none;}
+a:active, a:hover 	{text-decoration: none;cursor:url(../img/cursor1.png), move;}
+.tooltip		{display: inline;z-index: 3;}
+.tooltip emi 		{z-index: 3;display: none;font-size: 0.85em;line-height: 10px;font-style: normal;text-align: center;}	
+.tooltip:hover 		{z-index: 3;cursor:url(../img/cursor1.png), move;}
+.tooltip:hover emi	 {z-index: 3;word-break: normal;display: block;position: absolute;left: 75px;top: -30px;min-width: 300px;max-width: 300px;border: 2px solid #aaa;
+			-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;padding: 4px;background: #000;filter:alpha(opacity=80); /* IE */
+			opacity:0.8; /* allgemein */-moz-opacity:0.8; /* Mozilla */-khtml-opacity:0.8; /* KTHML */-opera-opacity:0.8; /* Opera */}
+
+/*----Ausgabe Einstellungen----*/
+
+div			{position:absolute;margin-top:-10px;margin-left:22px;}
+.points			{margin-left:4px;background-color:#000000;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:1px;font-weight:bold;
+			font-size:0.85em;}		
+.talentoutput		{width:35px;height:35px;}
+.outertable		{width:450px;filter:alpha(opacity=100);opacity:1.0;-moz-opacity:1.0;-khtml-opacity:1.0;-opera-opacity:1.0;}
+.treetable		{table-layout:fixed;background-repeat:no-repeat;background-position: center center;background-size: 100%;padding:8px;border-spacing:8px;}
+
+
+
+
+
+
+
