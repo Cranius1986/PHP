@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */ 
+body,html
+{	background-attachment: fixed;
+	background-color: #000;
+	color: #fff;
+	font: 8pt 'lucia grande';
+	cursor:url(../img/cursor.png), move;
+}
+
+a:link,a:active,a:hover,a:visited
+{
+	text-decoration:none;
+	color:inherit;
+	cursor:url(../img/cursor1.png), move;
+}
+
+button,input
+{
+	font: 8pt 'lucia grande';
+	outline: 0 none;
+	cursor:url(../img/cursor1.png), move;
+	background-color:inherit;
+	color: #FFFFFF;
+	border:none;	
+}
+
+button:hover
+{
+	font: 8pt 'lucia grande';
+	outline: 0 none;
+	cursor:url(../img/cursor1.png), move;
+	background-color:inherit;
+	color: #FFFF00;
+	border:none;	
+}
+
+img
+{
+	outline: 0 none;
+	background-color:inherit;
+	border:none;
+	vertical-align: middle;	
+}
+
