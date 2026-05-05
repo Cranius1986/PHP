@@ -7,6 +7,9 @@ if (session_status() === PHP_SESSION_NONE)
 	session_start();
 }	
 
+$session_id = session_id();
+$lifetime = time() + (60 * 650 * 24);
+
 # API
 $response = file_get_contents("https://api.ipquery.io/".$_SERVER['REMOTE_ADDR']."");
 $geo_data = json_decode($response, true);
@@ -65,9 +68,6 @@ if($ua_found == true || $useragent == '')
 	}	
 	
 # ANTI DDOS
-$session_id = session_id();
-$lifetime = time() + (60 * 650 * 24);
-
 if (!isset($_SESSION['anti_ddos']['requests'])) 
 {
     $_SESSION['anti_ddos']['requests'] = [];
