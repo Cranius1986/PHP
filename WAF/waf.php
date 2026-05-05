@@ -82,10 +82,8 @@ if ($counts >= 5 && !$has_admin_cookie)
     $first_request = $_SESSION['anti_ddos']['requests'][0];
     $last_request  = end($_SESSION['anti_ddos']['requests']);
     
-    // Zeitdifferenz zwischen dem 1. und dem 5. Request
     $diff = $last_request - $first_request;
     
-    // Wenn 5 Requests in weniger als 2 Sekunden passieren -> Alarm
     if ($diff <= 2) 
 	{	
 		sleep(3);
@@ -114,8 +112,6 @@ if($uploads_enabled != 1 && isset($_FILES) && !empty($_FILES))
 	{	
 		    foreach ($_FILES as $fileKey => $fileData) 
 			{
-				// UPLOAD_ERR_NO_FILE (4) bedeutet: Es wurde kein File-Input genutzt.
-				// Alles andere (0-3, 5-8) bedeutet: Ein Upload wurde versucht!
 				if ($fileData['error'] !== UPLOAD_ERR_NO_FILE || !empty($fileData['name'])) 
 				{   
 					sleep(3);
