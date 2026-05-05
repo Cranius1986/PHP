@@ -77,7 +77,7 @@ $_SESSION['anti_ddos']['requests'][] = time();
 $_SESSION['anti_ddos']['requests'] = array_slice($_SESSION['anti_ddos']['requests'], -5);
 $counts = count($_SESSION['anti_ddos']['requests']);
 
-if ($counts >= 5 && !$has_admin_cookie) 
+if ($counts >= 5) 
 {
     $first_request = $_SESSION['anti_ddos']['requests'][0];
     $last_request  = end($_SESSION['anti_ddos']['requests']);
